@@ -1,0 +1,27 @@
+.button {
+  text-align: center;
+
+  button {
+    width: 151px;
+    height: 48px;
+    border: 1px solid #ffffff;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 1;
+
+    &:active, &:focus {
+      outline: none;
+    }
+
+    &:disabled, &[disabled] {
+      opacity: .2;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import "libs";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "general/fonts";
+@import "general/base";
+@import "../blocks/components/components";
+@import "../blocks/modules/modules";
+
+#success-phone {
+  display: none;
+  width: 17px;
+  height: auto;
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 25px;
+  transform: translateY(-50%);
+}
+
+#error-phone {
+  display: none;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(180, 0, 0, 1);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  content: '!';
+  font-weight: bold;
+  font-size: 22px;
+  color: #ffffff;
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+#success-password {
+  display: none;
+  width: 17px;
+  height: auto;
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+#error-password {
+  display: none;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(180, 0, 0, 1);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  content: '!';
+  font-weight: bold;
+  font-size: 22px;
+  color: #ffffff;
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 10px;
+  transform: translateY(-50%);
+}

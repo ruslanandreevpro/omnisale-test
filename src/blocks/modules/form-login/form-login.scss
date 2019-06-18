@@ -1,0 +1,97 @@
+.form-login {
+  background-image: url('../img/form-bg.png');
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  width: 626px;
+  height: 400px;
+  padding: 45px 0;
+  position: relative;
+
+  &__back {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    a {
+      text-decoration: none;
+
+      span {
+        margin-left: 11px;
+        font-size: 10px;
+        color: rgba(255, 255, 255, .8);
+      }
+    }
+  }
+
+  &__logo {
+    margin: 0 auto 22px;
+    text-align: center;
+  }
+
+  &__form {
+    padding: 0 125px;
+
+    .pwd {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      margin: 0 auto 22px;
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 626px) {
+
+  .form-login {
+    width: calc(100vw - 30px);
+    height: auto;
+
+    &__form {
+      padding: 0 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .form-login {
+
+    &__form {
+      padding: 0 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .form-login {
+
+    &__logo {
+      width: 60px;
+      height: 60px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__form {
+
+      .pwd {
+        flex-direction: column;
+
+        a {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

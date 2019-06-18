@@ -1,0 +1,19 @@
+include ../../components/input/input
+include ../../components/checkbox/checkbox
+include ../../components/button/button
+
+section#form-login.form-login
+    ._back
+        a(href="#")
+            img(src="./img/arrow-back.png")
+            span Вернуться
+    ._logo
+        img(src="./img/logo.png")
+    ._form
+        form
+            +input('phone', 'tel', 'Номер телефона (мин. 10 знаков)', true, 10)
+            +input('password', 'password', 'Пароль (мин. 5 знаков)', true, 5)
+            .pwd
+                +checkbox('remember-password', false)
+                a(href="#") Забыл пароль
+            +button('Войти', 'submit', true)

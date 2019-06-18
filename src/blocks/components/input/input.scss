@@ -1,0 +1,39 @@
+.fieldset {
+  position: relative;
+
+  input {
+    padding: 0 50px 0 20px;
+    width: calc(100% - 70px);
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, .4);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    font-size: 18px;
+    text-align: center;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, .4);
+    }
+
+    &:active, &:focus {
+      opacity: 1;
+      background-color: #ffffff;
+      outline: none;
+    }
+
+    &.success {
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      background-color: transparent;
+    }
+
+    &.error {
+      border: 1px solid #ffffff;
+      color: #000000;
+      background-color: #ffffff;
+    }
+  }
+}

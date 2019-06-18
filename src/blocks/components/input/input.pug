@@ -1,0 +1,7 @@
+mixin input(name, type, placeholder, required=true, minLength=0)
+    div.fieldset
+        input(id=name type=type placeholder=placeholder minlength=minLength required=required)
+        div(id="success-" + name)
+            img(src="./img/check.png")
+        div(id="error-" + name)
+            span !
